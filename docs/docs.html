@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zshield — Documentation</title>
+  <meta name="description" content="zshield planned CLI commands and usage documentation.">
+  <link rel="stylesheet" href="https://zarlcorp.github.io/shared.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <nav class="nav">
+      <a href="https://zarlcorp.github.io" class="nav-brand">zarlcorp</a>
+      <a href="index.html">zshield</a>
+      <a href="https://github.com/zarlcorp/zshield">GitHub</a>
+    </nav>
+
+    <div class="doc-content">
+
+      <h1>zshield docs</h1>
+
+      <blockquote>These commands are planned &mdash; zshield is not yet released.</blockquote>
+
+      <h2>CLI commands</h2>
+
+      <h3>zshield start</h3>
+      <p>Start the DNS resolver daemon. Listens on localhost and intercepts DNS queries, blocking domains that match configured blocklists.</p>
+      <pre><code>$ zshield start</code></pre>
+
+      <h3>zshield</h3>
+      <p>Attach the interactive TUI dashboard. Shows real-time query log, blocking stats, and quick access to allow/deny overrides.</p>
+      <pre><code>$ zshield</code></pre>
+
+      <h3>zshield status</h3>
+      <p>Print current blocking statistics &mdash; total queries, blocked count, top blocked domains.</p>
+      <pre><code>$ zshield status</code></pre>
+
+      <h3>zshield allow &lt;domain&gt;</h3>
+      <p>Whitelist a domain. Queries for this domain will always resolve normally, even if it appears on a blocklist.</p>
+      <pre><code>$ zshield allow example.com</code></pre>
+
+      <h3>zshield block &lt;domain&gt;</h3>
+      <p>Blacklist a domain. Queries for this domain will always be blocked, regardless of blocklists.</p>
+      <pre><code>$ zshield block tracker.example.com</code></pre>
+
+    </div>
+
+    <footer class="footer">
+      <p>Open source. MIT licensed.</p>
+      <p><a href="https://zarlcorp.github.io">zarlcorp.github.io</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>

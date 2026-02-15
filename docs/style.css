@@ -1,0 +1,26 @@
+/* zshield — page-specific overrides */
+/* shared design system lives at zarlcorp.github.io/shared.css */
+
+/* hero tuning — keep everything in a single viewport */
+
+.hero {
+  padding: 3rem 0 1.5rem;
+}
+
+.status-badge {
+  margin-top: 1rem;
+}
+
+/* features section */
+
+.features {
+  padding: 0.5rem 0 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* footer spacing — tighter for single viewport */
+
+.footer {
+  padding: 1.5rem 0 2rem;
+}
