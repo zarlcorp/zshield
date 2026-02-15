@@ -73,9 +73,9 @@ make run
 
 ## Learn More
 
-- [Website](https://zarlcorp.github.io/zshield) — Documentation and install instructions
-- [zarlcorp/core](https://github.com/zarlcorp/core) — Shared Go packages
-- [MANIFESTO.md](https://github.com/zarlcorp/core/blob/main/MANIFESTO.md) — Philosophy and architecture
+- [zarlcorp.github.io/zshield](https://zarlcorp.github.io/zshield) — documentation and install instructions
+- [zarlcorp/core](https://github.com/zarlcorp/core) — shared go packages
+- [MANIFESTO.md](https://github.com/zarlcorp/core/blob/main/MANIFESTO.md) — philosophy and architecture
 
 ---
 
