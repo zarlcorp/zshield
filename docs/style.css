@@ -4,26 +4,6 @@
 /* tool accent */
 :root { --accent: var(--teal); }
 
-/* --- landing page: single viewport --- */
-
-.landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.landing .hero {
-  padding: 2.5rem 0 1.25rem;
-}
-
-.landing .tagline {
-  max-width: 540px;
-  margin: 0.5rem auto 0;
-}
-
 /* coming soon indicator */
 
 .status-badge {
@@ -43,10 +23,4 @@
 
 .landing .features {
   padding: 0.75rem 0 0.5rem;
-}
-
-/* footer — tighter for single viewport */
-
-.landing .footer {
-  padding: 1.25rem 0 1.5rem;
 }
