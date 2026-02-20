@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>zshield — Documentation</title>
+  <title>zshield — documentation</title>
   <meta name="description" content="Planned CLI commands and usage for zshield.">
   <link rel="stylesheet" href="https://zarlcorp.github.io/shared.css">
   <link rel="stylesheet" href="style.css">
@@ -12,26 +12,30 @@
 
   <nav class="bar">
     <div class="container">
-      <a href="https://zarlcorp.github.io" class="nav-brand">zarlcorp</a>
-      <a href="index.html">zshield</a>
-      <a href="https://github.com/zarlcorp/zshield">github</a>
+      <div class="prompt">
+        <span class="prompt-user">zarlcorp</span><span class="prompt-sep">:</span><span class="prompt-path">~/zshield/docs</span><span class="prompt-dollar">$</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">zshield</a>
+        <a href="https://github.com/zarlcorp/zshield">github</a>
+      </div>
     </div>
   </nav>
 
-  <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="container docs-page">
 
-    <div class="window">
-      <div class="window-title">zshield docs</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield docs</div>
+      <div class="card-content">
         <div class="doc-content">
           <blockquote>These commands are planned &mdash; zshield is not yet released.</blockquote>
         </div>
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield start</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield start</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>Start the DNS resolver daemon. Listens on localhost and intercepts DNS queries, blocking domains that match configured blocklists.</p>
           <pre><code>$ zshield start</code></pre>
@@ -39,9 +43,9 @@
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield stop</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield stop</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>Stop the DNS resolver daemon.</p>
           <pre><code>$ zshield stop</code></pre>
@@ -49,9 +53,9 @@
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield status</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield status</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>Print current blocking statistics &mdash; total queries, blocked count, top blocked domains.</p>
           <pre><code>$ zshield status</code></pre>
@@ -59,9 +63,9 @@
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield block &lt;domain&gt;</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield block &lt;domain&gt;</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>Block a domain. Queries for this domain will always be blocked, regardless of blocklists.</p>
           <pre><code>$ zshield block tracker.example.com</code></pre>
@@ -69,9 +73,9 @@
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield allow &lt;domain&gt;</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield allow &lt;domain&gt;</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>Allow a domain. Queries for this domain will always resolve normally, even if it appears on a blocklist.</p>
           <pre><code>$ zshield allow example.com</code></pre>
@@ -79,9 +83,9 @@
       </div>
     </div>
 
-    <div class="window">
-      <div class="window-title">zshield list</div>
-      <div class="window-content">
+    <div class="card">
+      <div class="card-header">zshield list</div>
+      <div class="card-content">
         <div class="doc-content">
           <p>List all custom block and allow rules. Shows per-domain overrides that have been manually configured.</p>
           <pre><code>$ zshield list</code></pre>
@@ -90,8 +94,8 @@
     </div>
 
     <footer class="footer">
-      <p><a href="index.html">&larr; Back to zshield</a></p>
-      <p>Open source. MIT licensed.</p>
+      <p><a href="index.html">&larr; back to zshield</a></p>
+      <p>open source. MIT licensed.</p>
       <p><a href="https://zarlcorp.github.io">zarlcorp.github.io</a></p>
     </footer>
 
